@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>fujiwarannosato 3Dビューア 複数ボックス</title>
+  <title>fujiHD 3Dビューア 複数ボックス</title>
   <style>
     body{margin:0;overflow:hidden;background:#444}
     canvas{display:block}
@@ -33,7 +33,7 @@ sun.position.set(-2000,500,0);
 scene.add(sun);
 
 /***** 1. モデル読み込み *****/
-new THREE.GLTFLoader().load('fujiwarannosato1.glb',g=>{
+new THREE.GLTFLoader().load('fujiHD.glb',g=>{
   const m=g.scene;m.scale.set(3.0,3.0,3.0);
   const deg=d=>d*Math.PI/180; m.rotation.set(deg(270),deg(0),deg(0));
   m.traverse(obj=>{
@@ -205,3 +205,4 @@ addEventListener('resize',()=>{
 </script>
 </body>
 </html>
+
