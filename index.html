@@ -28,8 +28,8 @@ document.body.appendChild(renderer.domElement);
 const controls = new THREE.OrbitControls(camera,renderer.domElement);
 controls.target.set(0,5,0); controls.update();
 scene.add(new THREE.AmbientLight(0xffffff, 1.2));
-const sun = new THREE.DirectionalLight(0xffffff,0.2);
-sun.position.set(2000,500,0);
+const sun = new THREE.DirectionalLight(0xffffff,0.3);
+sun.position.set(1000,0,1000);
 scene.add(sun);
 
 /***** 1. モデル読み込み *****/
@@ -205,6 +205,7 @@ addEventListener('resize',()=>{
 </script>
 </body>
 </html>
+
 
 
 
