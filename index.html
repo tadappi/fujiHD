@@ -27,7 +27,7 @@ renderer.setSize(innerWidth,innerHeight);
 document.body.appendChild(renderer.domElement);
 const controls = new THREE.OrbitControls(camera,renderer.domElement);
 controls.target.set(0,5,0); controls.update();
-scene.add(new THREE.AmbientLight(0xffffff, 0.8));
+scene.add(new THREE.AmbientLight(0xffffff, 1.2));
 const sun = new THREE.DirectionalLight(0xffffff,1.2);
 sun.position.set(-2000,500,0);
 scene.add(sun);
@@ -205,6 +205,7 @@ addEventListener('resize',()=>{
 </script>
 </body>
 </html>
+
 
 
 
